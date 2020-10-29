@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.top {
+    background-color: #f8f8f8;
+    // .top__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .top__contacts
+
+    &__contacts {
+        padding: 5px 0;
+        color: #757575;
+        font-size: 14px;
+        line-height: 29px;
+    }
+
+    // .top__address
+
+    &__address {
+        margin-right: 35px;
+
+        &:before {
+            content: '';
+            width: 12px;
+            height: 16px;
+            display: inline-block;
+            margin-right: 10px;
+            background: url(../img/top/top_map.png) no-repeat center;
+            background-size: cover;
+            vertical-align: middle;
+        }
+    }
+
+    // .top__phone
+
+    &__phone {
+        text-decoration: none;
+        color: inherit;
+
+        &:before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-right: 10px;
+            background: url(../img/top/phone.png) no-repeat center;
+            background-size: cover;
+            vertical-align: middle;
+        }
+    }
+
+    // .top__callback
+
+    &__callback {}
+
+    // .top__button
+
+    &__button {
+        padding: 12px 47px 12px 96px;
+        background-color: #0390c6;
+        border: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        transition: .3s;
+
+        &:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url(../img/top/call_back.png) no-repeat center;
+            background-size: cover;
+            position: absolute;
+            top: 8px;
+            left: 46px;
+        }
+
+        &:hover{
+            background-color: #016891;
+        }
+    }
+}
