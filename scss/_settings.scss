@@ -3,6 +3,12 @@
     font-family: 'Montserrat';
 }
 
+body{
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
 .container{
     max-width: 1140px;
     margin: 0 auto;

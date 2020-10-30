@@ -1,0 +1,105 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 925px) {
+    .top {
+        &__address {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 720px) {
+    .top {
+        &__button {
+            font-size: 0;
+            height: 100%;
+            padding: 0 10px;
+
+            &:before {
+                position: relative;
+                left: 0;
+                top: 0;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {
+    .modal-callback {
+        padding: 40px 0;
+        width: 100%;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__description {
+            font-size: 15px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 320px) {}
+
+
+
+//  вертикальный медиа+==========================================
+
+@media (max-height: 540px) {
+    .modal-callback {
+        padding: 30px 0;
+
+        &__title {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        &__description {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        &__input {
+            height: 30px;
+        }
+
+        &__personal-data {
+            margin-top: 15px;
+            margin-bottom: 9px;
+        }
+        &__button {
+            padding: 5px 60px;
+        }
+
+        &__label{
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+    }
+}
+
+@media (max-height: 320px) {
+    .modal-callback {
+        padding:0;
+
+
+    }
+}
