@@ -9,6 +9,57 @@
         max-width: 90%;
         padding: 0 20px;
     }
+
+    .burger {
+        display: block;
+    }
+
+    .navigation {
+        &__list {
+            display: none;
+
+            &-close {
+                display: block;
+            }
+        }
+
+        &__item {
+            margin: 0;
+            width: 100%;
+
+            &--wrapper{
+                position: static;
+                width: 100%;
+            }
+        }
+
+        &__sublist {
+            width: 100%;
+        }
+    }
+
+    // стили для открытия меню (ul)
+    .open-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        background: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 30px 20px;
+        margin: 0;
+        overflow-y: auto;
+
+    }
+
+    .search {
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 925px) {
@@ -84,11 +135,12 @@
             margin-top: 15px;
             margin-bottom: 9px;
         }
+
         &__button {
             padding: 5px 60px;
         }
 
-        &__label{
+        &__label {
             font-size: 12px;
             line-height: 20px;
         }
@@ -98,7 +150,7 @@
 
 @media (max-height: 320px) {
     .modal-callback {
-        padding:0;
+        padding: 0;
 
 
     }

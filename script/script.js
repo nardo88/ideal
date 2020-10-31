@@ -1,4 +1,5 @@
 import modal from './modal.js'
+import nav from './nav.js'
 
 
 
@@ -23,5 +24,5 @@ import modal from './modal.js'
 
 
 
-
+nav()
 modal()
