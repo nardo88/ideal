@@ -13,11 +13,30 @@
             left: 70px;
         }
     }
+
+    .about-clinic {
+
+        &__caption {
+            display: none;
+        }
+
+    }
 }
 
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
+    }
+
+    .about-clinic {
+        &__caption {
+            width: 110px;
+        }
+    }
+
+    .service__item {
+        width: 300px;
+        padding: 34px 15px 20px;
     }
 }
 
@@ -50,6 +69,8 @@
 
         }
 
+
+
     }
 
     // стили для открытия меню (ul)
@@ -74,6 +95,17 @@
         margin-top: 50px;
     }
 
+    .service {
+        &__item {
+            width: 100%;
+            padding: 34px 30px 20px;
+        }
+
+        &__link {
+            width: 48%;
+        }
+    }
+
 }
 
 @media (max-width: 925px) {
@@ -82,11 +114,41 @@
             display: none;
         }
     }
+
+    .about-clinic {
+
+        &__image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            flex-basis: 100%;
+
+            img {
+                filter: grayscale(100%);
+            }
+        }
+
+        &__info {
+            flex-basis: 100%;
+            position: relative;
+            z-index: 200;
+        }
+    }
+
+
 }
 
 @media (max-width: 768px) {}
 
 @media (max-width: 720px) {
+    .container {
+        max-width: 95%;
+        padding: 0 20px;
+    }
+
     .top {
         &__button {
             font-size: 0;
@@ -115,13 +177,41 @@
             background-size: 11px 23px;
         }
 
-        &__description{
+        &__description {
             color: #000;
         }
-        &__bg{
+
+        &__bg {
             opacity: .4;
-            img{
-            }
+
+            img {}
+        }
+
+        &__content {
+            padding: 78px 0 80px;
+        }
+    }
+
+
+
+    .data-clinic {
+        align-items: flex-start;
+        flex-direction: column;
+
+        &__line {
+            display: none;
+        }
+
+    }
+
+    .service {
+
+        &__link {
+            width: 100%;
+        }
+
+        &__item {
+            padding: 34px 10px 20px;
         }
     }
 }
@@ -135,7 +225,7 @@
             max-width: 380px;
         }
 
-        
+
     }
 }
 
@@ -153,9 +243,35 @@
             margin-bottom: 50px;
         }
     }
+
+    .about-clinic {
+        &__title {
+            font-size: 16px;
+        }
+
+
+
+    }
+
+    .data-clinic {
+        &__name {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        &__value {
+            font-size: 12px;
+        }
+    }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .about-clinic {
+        &__main-doctor {
+            font-size: 12px;
+        }
+    }
+}
 
 
 
@@ -192,14 +308,24 @@
             font-size: 12px;
             line-height: 20px;
         }
+        
 
     }
+    
 }
 
 @media (max-height: 320px) {
     .modal-callback {
         padding: 0;
-
-
     }
+
+    .about-clinic__description {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 15px 0 20px;
+    }
+
+    
+
+
 }

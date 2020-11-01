@@ -5,7 +5,8 @@
 
     &__wrapper {
         display: flex;
-        position: absolute;
+        margin-top: 30px;
+        background: #fff;
         left: 0;
         right: 0;
         box-shadow: 0 0 18px 2px rgba(84, 84, 84, 0.1);
@@ -20,7 +21,6 @@
 
     &__info {
         flex-basis: 50%;
-        background: #fff;
         padding: 20px;
     }
 
@@ -55,20 +55,34 @@
         color: #1c1b1b;
         font-size: 14px;
         line-height: 24px;
-        margin: 0 0 37px;
+        margin: 26px 0 37px;
     }
 
     // .about-clinic__bottom
 
-    &__bottom {}
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     // .about-clinic__main-doctor
 
-    &__main-doctor {}
+    &__main-doctor {
+        color: #757575;
+        font-size: 14px;
+        line-height: 24px;
+    }
 
     // .about-clinic__caption
 
-    &__caption {}
+    &__caption {
+        width: 203px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 
     // .about-clinic__image
 
