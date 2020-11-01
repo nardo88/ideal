@@ -1,0 +1,116 @@
+.about {
+    background: #edf4fc;
+    position: relative;
+    // .about__bg
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    // .about__img
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // .about__wrapper
+
+    &__wrapper {
+        position: relative;
+        z-index: 20;
+    }
+
+    // .about__content
+
+    &__content {
+        padding: 78px 0 121px;
+        flex-shrink: 0;
+    }
+
+    // .about__title
+
+    &__title {
+        max-width: 545px;
+        font-size: 36px;
+        font-weight: 700;
+        color: #0390c6;
+        margin: 0 0 40px;
+
+    }
+
+    // .about__description
+
+    &__description {
+        max-width: 483px;
+        color: #757575;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 48px;
+    }
+
+    // .about__button
+
+    &__button {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+        background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+        padding: 12px 58px;
+        border-radius: 18px;
+        transition: .3s;
+        outline: none;
+        transition: .3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        overflow: hidden;
+
+
+        &-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__btn {
+        /* Style for "Прямоуголь" */
+        width: 56px;
+        height: 56px;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        outline: none;
+    }
+
+    &__next {
+        background-image: url(../../img/about/next.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18px 32px;
+        right: 68px;
+    }
+
+    &__prev {
+        background-image: url(../../img/about/prev.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18px 32px;
+        left: 68px;
+    }
+}

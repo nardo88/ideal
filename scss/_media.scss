@@ -1,3 +1,20 @@
+@media (max-width: 1415px) {
+    .about {
+        &__btn {
+            top: 100%;
+            transform: translateY(-115%);
+        }
+
+        &__prev {
+            left: 0;
+        }
+
+        &__next {
+            left: 70px;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -15,8 +32,12 @@
     }
 
     .navigation {
-        &__list {
+        &__wrapper {
             display: none;
+        }
+
+        &__list {
+            flex-direction: column;
 
             &-close {
                 display: block;
@@ -27,15 +48,8 @@
             margin: 0;
             width: 100%;
 
-            &--wrapper{
-                position: static;
-                width: 100%;
-            }
         }
 
-        &__sublist {
-            width: 100%;
-        }
     }
 
     // стили для открытия меню (ul)
@@ -87,9 +101,43 @@
             }
         }
     }
+
+    .about {
+
+        &__title {
+            font-size: 30px;
+            max-width: 480px;
+        }
+
+        &__btn {
+            width: 40px;
+            height: 40px;
+            background-size: 11px 23px;
+        }
+
+        &__description{
+            color: #000;
+        }
+        &__bg{
+            opacity: .4;
+            img{
+            }
+        }
+    }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+
+    .about {
+
+        &__title {
+            font-size: 25px;
+            max-width: 380px;
+        }
+
+        
+    }
+}
 
 @media (max-width: 480px) {
     .modal-callback {
