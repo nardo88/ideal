@@ -270,41 +270,120 @@
     </section>
 
     <section class="recording">
-        <div class="recording__bg">
-            <img src="img/recording/bg.jpg" alt="backgroun recording">
+        <div class="recording__top">
+            <div class="container">
+                <h2 class="recording__title">Запишитесь на прием</h2>
+            </div>
         </div>
-        <div class="contsiner">
-            <div class="recording__wrapper">
-                <div class="recording__top">
-                    <h2 class="recording__title">Запишитесь на прием</h2>
-                </div>
-                <div class="recording__body">
-                    <div class="recording__form-wrapper">
-                        <form action="#" class="recording__form">
-                            <div class="recording__form-section">
-                                <input type="text" class="recording__input" placeholder="Введите ваше имя">
-                                <input type="tel" class="recording__input" placeholder="Телефон">
-                                <input type="text" class="recording__input" placeholder="Желаемая дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
-                            </div>
-                            <div class="recording__form-section">
-                                <textarea name="message" class="recording__textarea"></textarea>
-                            </div>
-                            <div class="recording__form-bottom">
-                                <div class="recording__form-personal-data">
-                                    <input id="recording-checbox" checked type="checkbox" class="recording__checkbox">
-                                    <label for="recording-checbox" class="recording__label">Даю согласие на обработку своих персональных данных</label>
+        <div class="recording__bottom">
+            <div class="recording__bg">
+                <img src="img/recording/bg.jpg" alt="backgroun recording">
+            </div>
+            <div class="container ">
+                    <div class="recording__body">
+                            <form action="#" class="recording__form">
+                                <div class="recording__form-section">
+                                    <input type="text" class="recording__input" placeholder="Введите ваше имя">
+                                    <input type="tel" class="recording__input" placeholder="Телефон">
+                                    <input type="text" class="recording__input" placeholder="Желаемая дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
                                 </div>
-                                <button type="submit" class="recording__form-btn">Отправить</button>
-                            </div>
-                        </form>
+                                <div class="recording__form-section">
+                                    <textarea name="message" class="recording__textarea" placeholder="Комментарий"></textarea>
+                                </div>
+                                <div class="recording__form-bottom">
+                                    <div class="recording__form-personal-data">
+                                        <input id="recording-checbox" checked type="checkbox" class="recording__checkbox">
+                                        <label for="recording-checbox" class="recording__label">Даю согласие на обработку своих персональных данных</label>
+                                    </div>
+                                    <button type="submit" class="recording__form-btn">Отправить</button>
+                                </div>
+                            </form>
+                        
+                            <img class="recording__image" src="img/recording/dog.png" alt="recording image">
                     </div>
-                    <div class="recording__image">
-                        <img src="img/recording/dog.png" alt="recording image">
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__wrapper">
+                <div class="reviews__top">
+                    <h2 class="reviews__title">Отзывы наших клиентов</h2>
+                    <a href="#" class="reviews__link">Читать все отзывы</a>
+                </div>
+                <div class="reviews__body">
+
+                    <!-- главный слайдер -->
+                    <div class="reviews__main-slider main-slider">
+                        <!-- обертка главного слайдера -->
+                        <div class="main-slider__wrapper">
+                            <!-- итем главного слайдера -->
+                            <div class="main-slider__item">
+                                <div class="main-slider__avatar">
+                                    <img src="img/reviews/client1.png" alt="avatar">
+                                </div>
+                                <div class="main-slider__info">
+                                    <span class="main-slider__name">Олег Дмитриевич</span>
+                                    <div class="main-slider__hole"><span>Отделение: </span>Консультация</div> 
+                                    <div class="main-slider__service"><span>Услуга: </span>Консультация по содержанию</div> 
+                                </div>
+                            </div>
+
+                            <!-- итем главного слайдера -->
+                            <div class="main-slider__item">
+                                <div class="main-slider__avatar">
+                                    <img src="img/reviews/client2.png" alt="avatar">
+                                </div>
+                                <div class="main-slider__info">
+                                    <span class="main-slider__name">Олег Дмитриевич</span>
+                                    <div class="main-slider__hole"><span>Отделение: </span>Консультация</div> 
+                                    <div class="main-slider__service"><span>Услуга: </span>Консультация по содержанию</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slider__buttons">
+                            <button class="main-slider__prev main-slider__btn"></button>
+                            <button class="main-slider__next main-slider__btn"></button>
+                        </div>
+                    </div>
+
+                    <!-- второй слайдер -->
+                    <div class="second-slider">
+                        <!-- обертка второго слайдера -->
+                        <div class="second-slider__wrapper">
+                            <!-- слайд второго слайдера -->
+
+                            <div class="second-slider__item">
+                                <div class="second-slider__content">
+                                    <p class="second-slider__text">Прием в клинике Levelarts - ведут опытные ветеринарные врачи: терапевты, хирурги, 
+                                        анестезиологи, специалисты визуальной диагностики, гинекологи, стоматологи, 
+                                        кардиологи и специалисты в области онкологии.
+                                    </p>
+                                    <p class="second-slider__text">В штат клиники входят также офтальмолог, стоматолог, орнитолог, герпетолог и 
+                                        специалист по грызунам и экзотическим животным. Прием в клинике Levelarts - 
+                                        ведут опытные ветеринарные врачи: терапевты, хирурги, анестезиологи, специалисты 
+                                        визуальной диагностики, гинекологи, стоматологи, кардиологи и специалисты в 
+                                        области онкологии. 
+                                    </p>
+                                </div>
+                                <div class="second-slider__bottom">
+                                    <a href="#" class="second-slider__link">Читать отзыв полностью</a>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
 
 
 

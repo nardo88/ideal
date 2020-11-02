@@ -1,83 +1,211 @@
 .recording {
-
+    position: relative;
     // .recording__bg
 
     &__bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            opacity: .85;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 200%;
+            transform: translateY(-50%);
+        }
     }
 
     // .recording__wrapper
 
-    &__wrapper {
-    }
+    &__wrapper {}
 
     // .recording__top
 
     &__top {
+        padding-top: 54px;
     }
 
     // .recording__title
 
     &__title {
+        color: #1c1b1b;
+        font-size: 24px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 66px;
+
+        &:after {
+            content: '';
+            width: 82px;
+            height: 3px;
+            background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+        }
     }
 
     // .recording__body
 
     &__body {
-    }
-
-    // .recording__form-wrapper
-
-    &__form-wrapper {
+        position: relative;
+        z-index: 20;
+        padding: 50px 0;
     }
 
     // .recording__form
 
     &__form {
+        max-width: 848px;
     }
 
     // .recording__form-section
 
     &__form-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     // .recording__input
 
     &__input {
+        /* Style for "Прямоуголь" */
+        width: 263px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid #e5e5e5;
+        background-color: #f8f8f8;
+        padding: 0 30px;
+        outline: none;
+
+        color: #757575;
+        font-size: 14px;
+        line-height: 24px;
     }
 
     // .recording__textarea
 
     &__textarea {
+        margin-top: 20px;
+        width: 100%;
+        resize: none;
+        outline: none;
+        padding: 12px 32px;
+        border-radius: 10px;
+        border: 1px solid #e5e5e5;
+        background-color: #f8f8f8;
+        color: #757575;
+        font-size: 16px;
+        line-height: 26.82px;
+        
     }
 
     // .recording__form-bottom
 
     &__form-bottom {
+        margin-top: 19px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     // .recording__form-personal-data
 
-    &__form-personal-data {
-    }
+    &__form-personal-data {}
 
     // .recording__checkbox
 
     &__checkbox {
+        display: none;
+
+        &:checked+.recording__label:after {
+            transform: scale(1);
+        }
     }
 
     // .recording__label
 
     &__label {
+        color: #ffffff;
+        font-size: 14px;
+        display: inline-flex;
+        line-height: 22px;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            align-self: flex-start;
+            flex: 0 0 14px;
+            height: 14px;
+            background: #fff;
+            border-radius: 4px;
+            margin-right: 10px;
+            margin-top: 5px;
+
+        }
+
+        &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 8px;
+            left: 3px;
+            background-color: #0085c7;
+            transform: scale(0);
+            transition: .3s;
+            border-radius: 3px;
+
+        }
     }
 
     // .recording__form-btn
 
     &__form-btn {
+        color: #757575;
+        width: 200px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid #e5e5e5;
+        background-color: #f8f8f8;
+        padding: 10px 60px;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+        }
     }
 
     // .recording__image
 
     &__image {
+        position: absolute;
+        right: 0;
+        top: -85px;
+    }
+
+    &__bottom {
+        position: relative;
     }
 }
-

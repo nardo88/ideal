@@ -38,6 +38,19 @@
         width: 300px;
         padding: 34px 15px 20px;
     }
+
+    .recording{
+        &__form{
+            max-width: 650px;
+            &-section{
+                flex-wrap: wrap;
+            }
+        }
+        &__input{
+            width: 30%;
+            padding: 0 20px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -103,6 +116,21 @@
 
         &__link {
             width: 48%;
+        }
+    }
+
+    .recording{
+        &__form{
+            max-width: 100%;
+            
+        }
+        &__image{
+            display: none;
+        }
+        &__input{
+            width: 30%;
+            padding: 0 20px;
+            
         }
     }
 
@@ -214,18 +242,54 @@
             padding: 34px 10px 20px;
         }
     }
+
+    .recording{
+        
+        &__input{
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__top{
+            padding: 0;
+        }
+    }
 }
 
 @media (max-width: 576px) {
 
     .about {
-
         &__title {
             font-size: 25px;
             max-width: 380px;
         }
+    }
 
-
+    .service__subtitle{
+        font-size: 18px;
+    }
+    .recording{
+        &__form-personal-data{
+            width: 100%;
+        }
+        &__form-bottom{
+            flex-wrap: wrap;
+        }
+        &__form-btn{
+            margin-top: 20px;
+        }
+        &__textarea{
+            padding: 10px;
+        }
+        &__input{
+            padding: 0 10px;
+        }
+        &__title{
+            font-size: 20px;
+        }
     }
 }
 
