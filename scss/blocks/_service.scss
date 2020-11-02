@@ -61,16 +61,18 @@
 
     // .service__icon
 
-    &__icon {}
+    &__icon {
+        svg {
+            width: 32px;
+            height: 32px;
+            fill: #0390c6;
+            margin-bottom: 30px;
+        }
+    }
 
     // .service__svg
 
-    &__svg {
-        width: 32px;
-        height: 32px;
-        fill: #0390c6;
-        margin-bottom: 30px;
-    }
+    &__svg {}
 
     // .service__categories
 
@@ -94,17 +96,21 @@
         text-align: center;
     }
 
-    &__link{
+    &__link {
         text-decoration: none;
-        &:hover .service__item{
+
+        &:hover .service__item {
             background: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
         }
-        &:hover .service__svg{
+
+        &:hover .service__icon svg {
             fill: #fff;
         }
+
         &:hover .service__categories {
             color: #fff;
         }
+
         &:hover .service__description {
             color: #fff;
         }
