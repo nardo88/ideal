@@ -1,5 +1,6 @@
 .reviews {
     margin-top: 106px;
+    margin-bottom: 100px;
     // .reviews__wrapper
 
     &__wrapper {}
@@ -60,19 +61,38 @@
 
     &__body {
         display: flex;
+        height: auto;
     }
 
     // .reviews__main-slider
 
     &__main-slider {}
+
+    // .reviews__container-main
+    &__container-main{
+        width: 458px;
+        flex-shrink: 0;
+    }
+
+    // .reviews__container-second
+    &__container-second{
+        height: 360px;
+    }
 }
 
 .main-slider {
-    flex-basis: 458px;
-    flex-shrink: 0;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+
     // .main-slider__wrapper
 
-    &__wrapper {}
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+    }
 
     // .main-slider__item
 
@@ -81,9 +101,10 @@
         align-items: center;
         align-content: center;
         border-radius: 10px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         padding: 20px 30px;
         cursor: pointer;
+        flex-shrink: 0;
     }
 
     // .main-slider__avatar
@@ -146,11 +167,13 @@
         width: 56px;
         height: 56px;
         border-radius: 10px;
-
+        position: relative;
+        z-index: 100;
         border: none;
         outline: none;
         margin: 0 15px;
         cursor: pointer;
+        margin-top: 10px;
     }
 
     // .main-slider__prev
@@ -175,11 +198,16 @@
 }
 
 .second-slider {
+    
+    overflow: hidden;
     height: 100%;
     // .second-slider__wrapper
 
     &__wrapper {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+
     }
 
     // .second-slider__item
@@ -188,6 +216,7 @@
         height: 100%;
         padding: 20px 10px 20px 30px;
         position: relative;
+        flex-shrink: 0;
 
         &:before {
             content: '';
@@ -225,8 +254,24 @@
     }
 
     &__content{
-        max-height: 240px;
+        max-height: 230px;
         overflow-y: auto;
+
+        &::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 6px #a7a4a44d;
+            border-radius: 10px;
+            background-color:  #f8f8f8;
+        }
+        
+        &::-webkit-scrollbar{
+            width: 5px;
+            background: #f8f8f8;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px #aaaaaa;
+            background-color:#aaaaaa;
+        }
     }
 
     &__link {
@@ -243,4 +288,15 @@
         transition: .3s;
 
     }
+}
+
+.swiper-slide-thumb-active{
+    background-color: #f8f8f8;
+    .main-slider__avatar{
+        border: 4px solid #0085c7;
+    }
+    .main-slider__name{
+        color: #0085c7;
+    }
+
 }
