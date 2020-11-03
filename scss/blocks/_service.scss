@@ -98,21 +98,5 @@
 
     &__link {
         text-decoration: none;
-
-        &:hover .service__item {
-            background: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
-        }
-
-        &:hover .service__icon svg {
-            fill: #fff;
-        }
-
-        &:hover .service__categories {
-            color: #fff;
-        }
-
-        &:hover .service__description {
-            color: #fff;
-        }
     }
 }

@@ -3,16 +3,68 @@
     font-family: 'Montserrat';
 }
 
-body{
+body {
     position: relative;
-    
+
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: 0 auto;
 
-    &--rel{
+    &--rel {
         position: relative;
+    }
+}
+
+@media (min-width: 992px) {
+    .top__button:hover {
+        background-color: #016891;
+    }
+
+    .modal-callback__button:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .about__button:hover {
+        opacity: 0.8;
+    }
+
+    .navigation__item:hover {
+        color: #0390c6;
+    }
+
+    .recording__form-btn:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .reviews__link:hover {
+        &:after {
+            width: 0;
+        }
+    }
+
+    .second-slider__link:hover {
+        background-color: #0085c7;
+        color: #fff;
+    }
+    .service__link{
+        &:hover .service__item {
+            background: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+        }
+
+        &:hover .service__icon svg {
+            fill: #fff;
+        }
+
+        &:hover .service__categories {
+            color: #fff;
+        }
+
+        &:hover .service__description {
+            color: #fff;
+        }
     }
 }

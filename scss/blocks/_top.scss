@@ -86,9 +86,7 @@
             left: 46px;
         }
 
-        &:hover {
-            background-color: #016891;
-        }
+       
     }
 }
 
@@ -233,10 +231,6 @@
         cursor: pointer;
         transition: .3s;
 
-        &:hover {
-            background-color: transparent;
-            color: #fff;
-        }
     }
 
     // .modal-callback__close
