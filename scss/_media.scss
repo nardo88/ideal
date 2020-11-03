@@ -39,23 +39,26 @@
         padding: 34px 15px 20px;
     }
 
-    .recording{
-        &__form{
+    .recording {
+        &__form {
             max-width: 650px;
-            &-section{
+
+            &-section {
                 flex-wrap: wrap;
             }
         }
-        &__input{
+
+        &__input {
             width: 30%;
             padding: 0 20px;
         }
     }
 
-    .reviews__container-main{
+    .reviews__container-main {
         width: 50%;
     }
-    .reviews__container-second{
+
+    .reviews__container-second {
         width: 50%;
     }
 
@@ -128,29 +131,32 @@
         }
     }
 
-    .recording{
-        &__form{
+    .recording {
+        &__form {
             max-width: 100%;
-            
+
         }
-        &__image{
+
+        &__image {
             display: none;
         }
-        &__input{
+
+        &__input {
             width: 30%;
             padding: 0 20px;
-            
+
         }
     }
 
-    .reviews__container-main{
-        width: 100%;
-    }
-    .reviews__container-second{
+    .reviews__container-main {
         width: 100%;
     }
 
-    .reviews__body{
+    .reviews__container-second {
+        width: 100%;
+    }
+
+    .reviews__body {
         flex-wrap: wrap;
     }
 
@@ -263,17 +269,19 @@
         }
     }
 
-    .recording{
-        
-        &__input{
+    .recording {
+
+        &__input {
             width: 100%;
             padding: 0 20px;
             margin-bottom: 10px;
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
         }
-        &__top{
+
+        &__top {
             padding: 0;
         }
     }
@@ -288,69 +296,114 @@
         }
     }
 
-    .service__subtitle{
+    .service__subtitle {
         font-size: 18px;
     }
-    .recording{
-        &__form-personal-data{
+
+    .recording {
+        &__form-personal-data {
             width: 100%;
         }
-        &__form-bottom{
+
+        &__form-bottom {
             flex-wrap: wrap;
         }
-        &__form-btn{
+
+        &__form-btn {
             margin-top: 20px;
         }
-        &__textarea{
+
+        &__textarea {
             padding: 10px;
         }
-        &__input{
+
+        &__input {
             padding: 0 10px;
         }
-        &__title{
+
+        &__title {
             font-size: 20px;
         }
     }
 
-    .second-slider__text{
-        font-size: 12px;
-    }
-    .main-slider__item{
-        width: 100%;
-        flex-direction: column;
-        padding: 20px 0;
-    }
-    .main-slider__info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-slider{
-        height: 390px;
+    .second-slider {
+        &__text {
+            font-size: 12px;
+            text-align: justify;
+            line-height: 20px;
+        }
+
+        &__item {
+            padding: 20px 0 0;
+
+        }
+
+        &__item:before {
+            left: 0;
+        }
+
+        &__link {
+            padding: 10px 30px;
+        }
     }
 
-    .main-slider__avatar{
-        width: 50px;
-        height: 50px;
+    .main-slider {
+        height: 160px;
+
+        &__item {
+            width: 100%;
+            flex-direction: column;
+            padding: 15px 0;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px 10px;
+        }
+
+        &__avatar {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__name {
+            font-size: 14px;
+            margin: 0 0 5px;
+        }
+
+        &__hole {
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        &__service {
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        &__buttons {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__btn {
+            width: 35px;
+            height: 35px;
+            background-size: 17px 9px;
+        }
     }
-    .main-slider__name{
-        font-size: 14px;
-        margin: 0 0 5px;
+
+    .reviews {
+        &__title {
+            font-size: 20px;
+            margin: 0 0 50px;
+        }
     }
-    .main-slider__hole {
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-    }
-    .main-slider__service{
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-    }
-    .second-slider__item{
-        padding: 20px 0 0;
-        
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -432,10 +485,10 @@
             font-size: 12px;
             line-height: 20px;
         }
-        
+
 
     }
-    
+
 }
 
 @media (max-height: 320px) {
@@ -449,7 +502,7 @@
         margin: 15px 0 20px;
     }
 
-    
+
 
 
 }

@@ -4,6 +4,16 @@ const reviews = () => {
     const secondSlider = document.querySelector('.second-slider')
 
     let reviewsMainSlider = new Swiper(mainSlider, {
+        breakpoints: {
+            577:{
+                slidesPerView: 2,
+                allowTouchMove: true
+            },
+            320: {
+                slidesPerView: 1,
+                allowTouchMove: false
+            }
+        },
         loop: true,
         slideClass: 'main-slider__item',
         wrapperClass: 'main-slider__wrapper',
@@ -28,6 +38,15 @@ const reviews = () => {
         navigation: {
             nextEl: '.main-slider__next',
             prevEl: '.main-slider__prev',
+        },
+        breakpoints: {
+            577:{
+                allowTouchMove: true
+            },
+            320: {
+                slidesPerView: 1,
+                allowTouchMove: false
+            }
         },
     })
 
