@@ -36,8 +36,8 @@ const reviews = () => {
         },
         autoHeight: true,
         navigation: {
-            nextEl: '.main-slider__next',
-            prevEl: '.main-slider__prev',
+            nextEl: '.reviews__next',
+            prevEl: '.reviews__prev',
         },
         breakpoints: {
             577:{
