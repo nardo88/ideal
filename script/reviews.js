@@ -2,6 +2,7 @@ const reviews = () => {
 
     const mainSlider = document.querySelector('.main-slider')
     const secondSlider = document.querySelector('.second-slider')
+    const secondSliderText = document.querySelectorAll('.second-slider__text')
 
     let reviewsMainSlider = new Swiper(mainSlider, {
         breakpoints: {
@@ -50,7 +51,10 @@ const reviews = () => {
         },
     })
 
-
+    // secondSliderText.forEach(item => {
+    //     item.textContent = item.textContent.slice(0, 450)
+        
+    // })
 }
 
 export default reviews
