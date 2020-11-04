@@ -8,25 +8,6 @@ import certificates from './certificates.js'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 nav()
 modal()
 about()
