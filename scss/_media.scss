@@ -216,6 +216,15 @@
         height: 330px;
     } 
 
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__nav-link{
+        margin: 0 0 15px;
+    }
+
 }
 
 @media (max-width: 850px) {
@@ -224,6 +233,12 @@
     }
     .certificates__slider{
         height: 385px;
+    }
+    .footer__copyright{
+        font-size: 12px;
+    }
+    .footer__developer{
+        font-size: 12px;    
     }
 }
 
@@ -330,6 +345,27 @@
             text-align: justify;
             line-height: 20px;
         }
+    }
+
+    .footer__bottom-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__copyright{
+        margin-bottom: 15px;
+    }
+    .footer__top-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__nav{
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .footer__developer{
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 10px;
     }
 }
 
