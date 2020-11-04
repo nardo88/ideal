@@ -100,15 +100,14 @@
     }
 
     &__next {
-        background-color: green;
-        background: url(../../img/reviews/next.png), #f8f8f8;
+        background: url(../img/reviews/next.png), #f8f8f8;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 32px 18px;
     }
 
     &__prev {
-        background: url(../../img/reviews/prev.png), #f8f8f8;
+        background: url(../img/reviews/prev.png), #f8f8f8;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 32px 18px;
