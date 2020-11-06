@@ -61,10 +61,12 @@
     .reviews__container-second {
         width: 50%;
     }
-    .certificates__item{
+
+    .certificates__item {
         height: 410px;
     }
-    .certificates__slider{
+
+    .certificates__slider {
         height: 490px;
         padding: 46px 0 0px;
     }
@@ -167,18 +169,39 @@
     .reviews__body {
         flex-wrap: wrap;
     }
-    .certificates__item{
+
+    .certificates__item {
         height: 360px;
     }
-    .certificates__slider{
+
+    .certificates__slider {
         height: 440px;
     }
+
     .reviews__container-second {
         height: 240px;
     }
-    .reviews{
+
+    .reviews {
         margin-bottom: 50px;
         margin-top: 60px
+    }
+
+    .info{
+        padding: 60px 0 50px;
+        &__image {
+           display: none;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__description {
+            padding-bottom: 35px;
+            padding-right: 0;
+        }
+        &__link{
+            margin-top: 30px;
+        }
     }
 
 }
@@ -212,18 +235,22 @@
             z-index: 200;
         }
     }
-    .certificates__item{
-        height: 330px;
-    } 
 
-    .footer__nav{
+    .certificates__item {
+        height: 330px;
+    }
+
+    .footer__nav {
         display: flex;
         flex-direction: column;
     }
 
-    .footer__nav-link{
+    .footer__nav-link {
         margin: 0 0 15px;
     }
+
+    
+
 
 }
 
@@ -231,22 +258,26 @@
     .certificates__item {
         height: 305px;
     }
-    .certificates__slider{
+
+    .certificates__slider {
         height: 385px;
     }
-    .footer__copyright{
+
+    .footer__copyright {
         font-size: 12px;
     }
-    .footer__developer{
-        font-size: 12px;    
+
+    .footer__developer {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 770px) {
-    .certificates__item img{
+    .certificates__item img {
         object-fit: contain;
     }
-    .certificates__title{
+
+    .certificates__title {
         margin-bottom: 20px;
     }
 }
@@ -339,6 +370,7 @@
             padding: 0;
         }
     }
+
     .second-slider {
         &__text {
             font-size: 12px;
@@ -347,22 +379,26 @@
         }
     }
 
-    .footer__bottom-wrapper{
+    .footer__bottom-wrapper {
         flex-direction: column;
         justify-content: center;
     }
-    .footer__copyright{
+
+    .footer__copyright {
         margin-bottom: 15px;
     }
-    .footer__top-wrapper{
+
+    .footer__top-wrapper {
         flex-direction: column;
         justify-content: center;
     }
-    .footer__nav{
+
+    .footer__nav {
         margin-bottom: 20px;
         align-items: center;
     }
-    .footer__developer{
+
+    .footer__developer {
         text-align: center;
         line-height: 1.4;
         margin-bottom: 10px;
@@ -467,7 +503,7 @@
             text-align: center;
         }
 
-        
+
     }
 
     .reviews {
@@ -487,8 +523,23 @@
             background-size: 17px 9px;
         }
     }
-    .certificates__title{
+
+    .certificates__title {
         font-size: 20px;
+    }
+
+    .info{
+        
+        &__text{
+        line-height: 20px;
+        text-align: left;
+        }
+        &__body{
+            margin-top: 40px;
+        }
+        &__link{
+            padding: 10px 30px;
+        }
     }
 
 }
@@ -527,22 +578,30 @@
             font-size: 12px;
         }
     }
-    .reviews__container-second{
+
+    .reviews__container-second {
         height: 320px;
     }
-    .certificates__container{
+
+    .certificates__container {
         .swiper-slide-active {
             transform: scale(1);
         }
-    
+
     }
+
     .certificates__slider {
         height: 335px;
         padding: 20px 0 0px;
     }
+
     .certificates__text {
         font-size: 12px;
         line-height: 18px;
+    }
+
+    .statistic__name{
+        font-size: 12px;
     }
 }
 
@@ -551,6 +610,9 @@
         &__main-doctor {
             font-size: 12px;
         }
+    }
+    .info__text{
+        font-size: 12px;    
     }
 }
 

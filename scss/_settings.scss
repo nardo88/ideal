@@ -8,6 +8,27 @@ body {
 
 }
 
+.title {
+    color: #1c1b1b;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    line-height: 1;
+    margin: 0 0 71px;
+
+    &:after {
+        content: '';
+        width: 82px;
+        height: 3px;
+        background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -50,7 +71,8 @@ body {
         background-color: #0085c7;
         color: #fff;
     }
-    .service__link{
+
+    .service__link {
         &:hover .service__item {
             background: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
         }
@@ -67,14 +89,22 @@ body {
             color: #fff;
         }
     }
-    .footer__nav-link:hover{
+
+    .footer__nav-link:hover {
         color: #0390c6;
     }
+
     .footer__social-link:hover {
         background: #000;
         border: 1px solid #fff;
-        svg{
+
+        svg {
             fill: #fff;
         }
+    }
+
+    .info__link:hover{
+        background: #0085c7;
+        color: #fff;
     }
 }
