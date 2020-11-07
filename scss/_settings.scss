@@ -107,4 +107,11 @@ body {
         background: #0085c7;
         color: #fff;
     }
+
+    .slider-top__item:hover .slider-top__name{
+        color: #ffffff;
+        &:after{
+            opacity: 1;
+        }
+    }
 }

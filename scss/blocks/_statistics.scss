@@ -1,0 +1,39 @@
+.statistics {
+    background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+    padding: 30px 0;
+
+    // .statistics__wrapper
+
+    &__wrapper {
+        display: flex;
+    }
+
+    // .statistics__item
+
+    &__item {
+        width: 25%;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .statistics__value
+
+    &__value {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    // .statistics__description
+
+    &__description {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin: 15px 0 0;
+    }
+}

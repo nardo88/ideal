@@ -1,5 +1,4 @@
 const certificates = () => {
-    let className = 'certificates__pagination-item'
 
     let certificatesSlider = new Swiper('.certificates__slider', {
         loop: true,

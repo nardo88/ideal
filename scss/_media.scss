@@ -204,6 +204,20 @@
         }
     }
 
+    .statistics{
+
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        &__item{
+            width: 50%;
+            margin: 20px 0;
+        }
+        &__description{
+            max-width: 225px;
+        }
+    }
+
 }
 
 @media (max-width: 925px) {
@@ -542,6 +556,12 @@
         }
     }
 
+    .statistics__item{
+        width: 100%;
+    }
+
+
+
 }
 
 @media (max-width: 480px) {
@@ -614,6 +634,17 @@
     .info__text{
         font-size: 12px;    
     }
+
+    .statistics__value{
+        font-size: 36px;
+    }
+    .statistics__description{
+        font-size: 12px;
+    }
+
+    .statistics__item{
+        margin: 15px 0;
+    } 
 }
 
 
