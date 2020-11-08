@@ -1,5 +1,6 @@
 .departments {
     padding: 106px 0 103px;
+    position: relative;
 
     // .departments__wrapper
 
@@ -11,7 +12,9 @@
 
     // .departments__container
 
-    &__container {}
+    &__container {
+        
+    }
 
     // .departments__pagination
 
@@ -19,7 +22,8 @@
         display: flex;
         justify-content: center;
         margin: 30px 0 50px;
-        .swiper-pagination-bullet{
+
+        .swiper-pagination-bullet {
             margin: 0 5px;
         }
     }
@@ -30,15 +34,32 @@
 
     // .departments__next
 
-    &__next {}
-
-    // .departments__btn
-
-    &__btn {}
+    &__next {
+        right: 68px;
+        background: url(../../img/departments/next.svg) no-repeat center, #e6f0fb;
+        background-size: 18px 32px;
+    }
 
     // .departments__prev
 
-    &__prev {}
+    &__prev {
+        left: 68px;
+        background: url(../../img/departments/prev.svg) no-repeat center, #e6f0fb;
+        background-size: 18px 32px;
+    }
+
+    // .departments__btn
+
+    &__btn {
+        position: absolute;
+        top: 266px;
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
 }
 
 .slider-top {
@@ -92,7 +113,8 @@
         font-size: 14px;
         transition: .3s;
         overflow: hidden;
-        &:after{
+
+        &:after {
             content: '';
             background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
             position: absolute;
@@ -103,12 +125,13 @@
             left: 0;
             transition: .3s;
             opacity: 0;
-            
+
         }
     }
 }
 
 .tabs {
+
 
     // .tabs__wrapper
 
@@ -122,21 +145,58 @@
 
     // .tabs__info
 
-    &__info {}
+    &__info {
+        padding: 0 17px 8px 0;
+    }
 
     // .tabs__title
 
-    &__title {}
+    &__title {
+        color: #1c1b1b;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0 0 26px;
+    }
 
     // .tabs__description
 
-    &__description {}
+    &__description {
+        margin: 0 0 34px 0;
+        color: #757575;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
 
     // .tabs__image
 
-    &__image {}
+    &__image {
+        flex-basis: 487px;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
-.active-tab{
+.active-tab {
     display: flex;
+}
+
+.active-slide{
+    .slider-top__name{
+        color: #ffffff;
+        &:after{
+            opacity: 1;
+        }
+    }
+    
 }
