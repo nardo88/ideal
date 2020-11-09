@@ -114,4 +114,19 @@ body {
             opacity: 1;
         }
     }
+    .specialists__tabs-title:hover{
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+            border-radius: 10px;
+            z-index: -1;
+        }
+        background: transparent;
+        color: #ffffff;
+    }
 }

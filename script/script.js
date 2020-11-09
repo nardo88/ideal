@@ -4,6 +4,7 @@ import about from './about.js'
 import reviews from './reviews.js'
 import certificates from './certificates.js'
 import departments from './departments.js'
+import specialists from './specialists.js'
 
 
 
@@ -15,3 +16,4 @@ about()
 reviews()
 certificates()
 departments()
+specialists()
