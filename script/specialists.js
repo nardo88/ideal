@@ -1,6 +1,13 @@
 const specialists = () => {
     const specialistsTabsTitle = document.querySelectorAll('.specialists__tabs-title')
     const specialistsTabs = document.querySelectorAll('.specialists-tabs')
+    const specialistsBtn = document.querySelector('.specialists__btn')
+    const specialistsTop = document.querySelector('.specialists__top')
+    const specialistsClose = document.querySelector('.specialists__close')
+
+    const toogleActive = () => {
+        specialistsTop.classList.toggle('specialists__top--active')
+    }
 
 
     specialistsTabsTitle.forEach((item, i) => {
@@ -14,8 +21,22 @@ const specialists = () => {
                 tab.classList.remove('specialists-tabs--active')
             })
             specialistsTabs[i].classList.add('specialists-tabs--active')
+            
         })
     })
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 577){
+            specialistsTabsTitle.forEach(item => {
+                item.addEventListener('click', toogleActive)
+            })
+        }
+    })
+
+    
+
+    specialistsBtn.addEventListener('click', toogleActive)
+    specialistsClose.addEventListener('click', toogleActive)
 
 }
 
