@@ -25,13 +25,11 @@ const specialists = () => {
         })
     })
 
-    window.addEventListener('resize', () => {
         if (window.innerWidth < 577){
             specialistsTabsTitle.forEach(item => {
                 item.addEventListener('click', toogleActive)
             })
         }
-    })
 
         specialistsBtn.addEventListener('click', toogleActive)
         specialistsClose.addEventListener('click', toogleActive)
