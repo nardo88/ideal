@@ -85,6 +85,9 @@
             }
         }
     }
+    .footer__nav-link{
+        margin-right: 25px;
+    }
 
 
 
@@ -286,6 +289,14 @@
         }
 
     }
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__nav-link {
+        margin: 0 0 15px;
+    }
 
 }
 
@@ -323,14 +334,7 @@
         height: 330px;
     }
 
-    .footer__nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__nav-link {
-        margin: 0 0 15px;
-    }
+    
 }
 
 @media (max-width: 850px) {

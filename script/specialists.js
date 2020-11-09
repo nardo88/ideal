@@ -33,10 +33,8 @@ const specialists = () => {
         }
     })
 
-    
-
-    specialistsBtn.addEventListener('click', toogleActive)
-    specialistsClose.addEventListener('click', toogleActive)
+        specialistsBtn.addEventListener('click', toogleActive)
+        specialistsClose.addEventListener('click', toogleActive)
 
 }
 
