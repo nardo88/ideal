@@ -42,7 +42,8 @@
     &__content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin: 0 -15px;
     }
 
     // .service__item
@@ -52,27 +53,42 @@
         min-height: 230px;
         border-radius: 10px;
         background: #f8f8f8;
-        margin-bottom: 30px;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 34px 30px 20px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border-radius: 10px;
+            transition: .3s;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 5;
+            right: 0;
+            opacity: 0;
+            background: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+        }
     }
 
     // .service__icon
 
     &__icon {
+        position: relative;
+        z-index: 10;
+
         svg {
+            transition: .3s;
             width: 32px;
             height: 32px;
             fill: #0390c6;
             margin-bottom: 30px;
         }
     }
-
-    // .service__svg
-
-    &__svg {}
 
     // .service__categories
 
@@ -82,6 +98,9 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
+        position: relative;
+        z-index: 10;
+        transition: .3s;
     }
 
     // .service__description
@@ -94,9 +113,15 @@
         font-weight: 400;
         line-height: 24px;
         text-align: center;
+        position: relative;
+        z-index: 10;
+        transition: .3s;
     }
 
     &__link {
         text-decoration: none;
+        display: block;
+        margin: 15px;
+
     }
 }

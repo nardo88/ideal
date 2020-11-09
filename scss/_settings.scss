@@ -73,8 +73,8 @@ body {
     }
 
     .service__link {
-        &:hover .service__item {
-            background: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+        &:hover .service__item:before {
+            opacity: 1;
         }
 
         &:hover .service__icon svg {

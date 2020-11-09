@@ -150,6 +150,10 @@
     }
 
     .service {
+        &__content{
+            justify-content: space-between;
+            margin: 0;
+        }
         &__item {
             width: 100%;
             padding: 34px 30px 20px;
@@ -157,6 +161,7 @@
 
         &__link {
             width: 48%;
+            margin: 0 0 30px;
         }
     }
 
