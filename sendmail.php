@@ -18,23 +18,23 @@
     // кому отправлять
     $mail->addAddress('nardo1988@mail.ru');
     // тема письма
-    $mail->Subject = 'Привет! Это тестовое письмо';
+    $mail->Subject = 'Заказ на обратный звонок';
     // рука (обрабатываем radio кнопки)
     $hand = "Правая";
     if($_POST['hand'] == "left"){
         $hand = "Левая";
     }
     //Тело письма
-    $body = '<h1>Встречайте супер письмо</h1>';
+    $body = '<h1>Заказ на обратный звонок</h1>';
     // если поле есть то формируем разметку html 
     // c данныи и все это пушим в тело ответа
     if (trim(!empty($_POST['name']))){
         $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
     }
-    if (trim(!empty($_POST['email']))){
+    if (trim(!empty($_POST['phone']))){
         $body.='<p><strong>Телефон:</strong> '.$_POST['phone'].'</p>';
     }
-    if (trim(!empty($_POST['message']))){
+    if (trim(!empty($_POST['date']))){
         $body.='<p><strong>Желаемая дата записи:</strong> '.$_POST['date'].'</p>';
     }
     //Прикрепить файл
