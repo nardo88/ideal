@@ -232,17 +232,17 @@
     <div class="modal-callback">
         <h2 class="modal-callback__title">Заказать обратный звонок</h2>
         <span class="modal-callback__description">Перезвоним за 2 минуты</span>
-        <form class="modal-callback__form">
+        <form action="#" class="modal-callback__form">
             <div class="input-wrapper">
-                <input type="text" class="modal-callback__input modal-callback__input--name"
-                    placeholder="Введите ваше имя">
-                <input type="tel" class="modal-callback__input modal-callback__input--phone" placeholder="Телефон">
-                <input type="text" class="modal-callback__input modal-callback__input--date" placeholder="Желаемая дата"
-                    onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+
+                <input name="name" type="text" class=" _req modal-callback__input modal-callback__input--name" placeholder="Введите ваше имя" >
+                <input name="phone" type="tel" class=" _req modal-callback__input modal-callback__input--phone" placeholder="Телефон" >
+                <input name="date" type="text" class=" _req modal-callback__input modal-callback__input--date" placeholder="Желаемая дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
+
             </div>
 
             <div class="modal-callback__personal-data">
-                <input id="modal-checbox" checked type="checkbox" class="modal-callback__checkbox">
+                <input id="modal-checbox" checked type="checkbox" class="modal-callback__checkbox _req">
                 <label for="modal-checbox" class="modal-callback__label">Даю согласие на обработку своих персональных
                     данных</label>
             </div>
