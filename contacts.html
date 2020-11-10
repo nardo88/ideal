@@ -140,32 +140,30 @@
                 <img src="img/recording/bg.jpg" alt="backgroun recording">
             </div>
             <div class="container ">
-                <div class="recording__body">
-                    <form action="#" class="recording__form">
-                        <div class="recording__form-section">
-                            <input type="text" class="recording__input" placeholder="Введите ваше имя">
-                            <input type="tel" class="recording__input" placeholder="Телефон">
-                            <input type="text" class="recording__input" placeholder="Желаемая дата"
-                                onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
-                        </div>
-                        <div class="recording__form-section">
-                            <textarea name="message" class="recording__textarea" placeholder="Комментарий"></textarea>
-                        </div>
-                        <div class="recording__form-bottom">
-                            <div class="recording__form-personal-data">
-                                <input id="recording-checbox" checked type="checkbox" class="recording__checkbox">
-                                <label for="recording-checbox" class="recording__label">Даю согласие на обработку своих
-                                    персональных данных</label>
-                            </div>
-                            <button type="submit" class="recording__form-btn">Отправить</button>
-                        </div>
-                    </form>
-
-                    <img class="recording__image" src="img/recording/dog.png" alt="recording image">
-                </div>
+                    <div class="recording__body">
+                            <form action="#" class="recording__form">
+                                <div class="recording__form-section">
+                                    <input name="name" type="text" class="recording__input _required"  placeholder="Введите ваше имя">
+                                    <input name="phone" type="tel" class="recording__input recording__input-phone _required" placeholder="Телефон">
+                                    <input name="date" type="text" class="recording__input _required" placeholder="Желаемая дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                                </div>
+                                <div class="recording__form-section">
+                                    <textarea name="message" class="recording__textarea _required" placeholder="Комментарий"></textarea>
+                                </div>
+                                <div class="recording__form-bottom">
+                                    <div class="recording__form-personal-data">
+                                        <input id="recording-checbox" checked type="checkbox" class="recording__checkbox _required">
+                                        <label for="recording-checbox" class="recording__label">Даю согласие на обработку своих персональных данных</label>
+                                    </div>
+                                    <button type="submit" class="recording__form-btn">Отправить</button>
+                                </div>
+                            </form>
+                        
+                            <img class="recording__image" src="img/recording/dog.png" alt="recording image">
+                    </div>
             </div>
         </div>
-
+        
     </section>
 
 

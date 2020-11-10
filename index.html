@@ -282,16 +282,16 @@
                     <div class="recording__body">
                             <form action="#" class="recording__form">
                                 <div class="recording__form-section">
-                                    <input type="text" class="recording__input" placeholder="Введите ваше имя">
-                                    <input type="tel" class="recording__input" placeholder="Телефон">
-                                    <input type="text" class="recording__input" placeholder="Желаемая дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                                    <input name="name" type="text" class="recording__input _required"  placeholder="Введите ваше имя">
+                                    <input name="phone" type="tel" class="recording__input recording__input-phone _required" placeholder="Телефон">
+                                    <input name="date" type="text" class="recording__input _required" placeholder="Желаемая дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
                                 </div>
                                 <div class="recording__form-section">
-                                    <textarea name="message" class="recording__textarea" placeholder="Комментарий"></textarea>
+                                    <textarea name="message" class="recording__textarea _required" placeholder="Комментарий"></textarea>
                                 </div>
                                 <div class="recording__form-bottom">
                                     <div class="recording__form-personal-data">
-                                        <input id="recording-checbox" checked type="checkbox" class="recording__checkbox">
+                                        <input id="recording-checbox" checked type="checkbox" class="recording__checkbox _required">
                                         <label for="recording-checbox" class="recording__label">Даю согласие на обработку своих персональных данных</label>
                                     </div>
                                     <button type="submit" class="recording__form-btn">Отправить</button>

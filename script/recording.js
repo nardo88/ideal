@@ -1,17 +1,19 @@
-const modal = () => {
-    const topButton = document.querySelector('.top__button');
-    const modalCallback = document.querySelector('.modal-callback')
-    const closeModal = document.querySelector('.modal-callback__close')
-    const overlay = document.querySelector('.overlay')
-    const inputPhone = document.querySelector('.modal-callback__input--phone')
-    const form = document.querySelector('.modal-callback__form')
+const recording = () => {
+    const inputPhone = document.querySelector('.recording__input-phone')
+    const form = document.querySelector('.recording__form')
+
+    if (inputPhone){
+        let maskPhone = {
+            mask: '+{7}(000)000-00-00'
+        };
+    
+        let maskForm = IMask(inputPhone, maskPhone);
 
 
-    let maskOptions = {
-        mask: '+{7}(000)000-00-00'
-    };
+        
+    }
 
-    let mask = IMask(inputPhone, maskOptions);
+    
 
     async function formSend(e) {
         e.preventDefault();
@@ -19,13 +21,13 @@ const modal = () => {
         // создаем объект с помощью конструктора FormData
         // в качестве аргумента передаем элемент нашей формы
         let formData = new FormData(form)
-        
+
         // если переменная error равна 0 то выполняем отправку
         if (error === 0) {
             // далее мы используем fetch запрос у которого два аргумента
             // первый - это куда отправляем данные
             // второй - это метод запроса (POST) и передаваемые данные
-            let response = await fetch('sendmail.php', {
+            let response = await fetch('appointment.php', {
                 method: 'POST',
                 body: formData,
             })
@@ -36,10 +38,10 @@ const modal = () => {
                 let result = await response.json()
                 // Выводим alert c результатом ответа
                 alert(result.message)
-                
+
                 // перезагружаем форму что бы очистить поля
                 form.reset()
-                
+
                 // если же что то пошло не так
             } else {
                 // мы выдаем alert c результатом
@@ -52,22 +54,22 @@ const modal = () => {
         };
     }
 
-     // Валидация формы
-     function formValidate() {
+    // Валидация формы
+    function formValidate() {
         let error = 0;
-        let formReq = document.querySelectorAll('._req')
-        
+        let formReq = document.querySelectorAll('._required')
+
         formReq.forEach(item => {
             formRemoveError(item)
-            if (item.getAttribute("type") === "checkbox"){
+            if (item.getAttribute("type") === "checkbox") {
                 formRemoveError(item.nextElementSibling)
             }
-            if (item.getAttribute("type") === "checkbox" && item.checked === false){
+            if (item.getAttribute("type") === "checkbox" && item.checked === false) {
                 formAddError(item.nextElementSibling)
                 error++
                 // здесь просто проверяем что значение value не пустая строка
             } else {
-                if (item.value === ''){
+                if (item.value === '') {
                     formAddError(item)
                     error++
                 }
@@ -85,28 +87,7 @@ const modal = () => {
         input.classList.remove('_error')
     }
 
-    
-    // появление модального окна
-    const toggleOverlay = () => {
-        overlay.classList.toggle('active')
-    }
-
-    topButton.addEventListener('click', () => {
-        modalCallback.classList.add('open-modal')
-        toggleOverlay()
-    })
-    closeModal.addEventListener('click', () => {
-        modalCallback.classList.remove('open-modal')
-        toggleOverlay()
-    })
-    overlay.addEventListener('click', () => {
-        modalCallback.classList.remove('open-modal')
-        toggleOverlay()
-    })
-    // отправка формы
     form.addEventListener('submit', formSend);
 }
 
-
-
-export default modal
+export default recording

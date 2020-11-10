@@ -5,6 +5,7 @@ import reviews from './reviews.js'
 import certificates from './certificates.js'
 import departments from './departments.js'
 import specialists from './specialists.js'
+import recording from './recording.js'
 
 
 
@@ -17,3 +18,4 @@ reviews()
 certificates()
 departments()
 specialists()
+recording()
