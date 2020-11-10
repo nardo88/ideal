@@ -6,13 +6,16 @@ const specialists = () => {
     const specialistsClose = document.querySelector('.specialists__close')
 
     const toogleActive = () => {
-        specialistsTop.classList.toggle('specialists__top--active')
+        if (window.innerWidth < 577){
+            specialistsTop.classList.toggle('specialists__top--active')
+        }
     }
 
 
     specialistsTabsTitle.forEach((item, i) => {
         item.addEventListener('click', (event) => {
             event.preventDefault()
+            toogleActive()
             specialistsTabsTitle.forEach(title => {
                 title.classList.remove('specialists__tabs-title--active')
             })
@@ -24,15 +27,13 @@ const specialists = () => {
             
         })
     })
-
-        if (window.innerWidth < 577){
-            specialistsTabsTitle.forEach(item => {
-                item.addEventListener('click', toogleActive)
-            })
-        }
-
+    
+    if (specialistsBtn){
         specialistsBtn.addEventListener('click', toogleActive)
+    }
+    if (specialistsClose){
         specialistsClose.addEventListener('click', toogleActive)
+    }
 
 }
 

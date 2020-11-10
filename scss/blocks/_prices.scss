@@ -1,0 +1,71 @@
+.prices {
+    padding: 55px 0 100px;
+    background: url(../img/service/bg.png) no-repeat center;
+    background-size: cover;
+
+    // .prices__wrapper
+
+    &__wrapper {}
+
+    // .prices__title
+
+    &__title {}
+
+    // .prices__content
+
+    &__content {}
+
+    // .prices__table
+
+    &__table {
+        width: 100%;
+        background-color: #f8f8f8;
+        border-spacing: 0;
+    }
+
+    // .prices__line
+
+    &__line {}
+
+    // .prices__column
+
+    &__column {
+        color: #757575;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        width: 70%;
+        padding: 15px 30px;
+        border: 1px solid #e5e5e5;
+        border-top: transparent;
+        border-right: transparent;
+
+        
+        &--bold {
+            color: #1c1b1b;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            padding: 22px 30px;
+            border: 1px solid #e5e5e5;
+        }
+
+        &-price {
+            width: 30%;
+            color: #757575;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 15px 30px;
+            border: 1px solid #e5e5e5;
+            border-top: transparent;
+        }
+        &--transparent-border{
+            border-right: transparent;
+        }
+    }
+
+    // .prices__column--bold
+
+
+}
