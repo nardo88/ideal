@@ -403,6 +403,12 @@
         padding: 0 20px;
     }
 
+    .header__logo-link{
+        img{
+            width: 135px;
+        }
+    }
+
     .top {
         &__button {
             font-size: 0;
