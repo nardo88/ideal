@@ -62,6 +62,11 @@
     }
 }
 
+.swiper-button-disabled{
+    opacity: .2;
+    cursor: default;
+}
+
 .slider-top {
     overflow: hidden;
     width: 100%;
