@@ -1,8 +1,15 @@
 const pricesContentItem = document.querySelectorAll('.prices__content-item');
-const serviceListItem = document.querySelectorAll('.service-list__item');
+const servicePriceItem = document.querySelectorAll('.service-price__item');
+const servicePriceButton = document.querySelector('.service-price__button');
+const servicePriceInner = document.querySelector('.service-price__inner');
+const servicePriceClose = document.querySelector('.service-price__close');
+
+pricesContentItem[0].classList.add('prices__content-item--active');
+servicePriceItem[0].classList.add('service-price__item--active');
+
 
 // табы
-serviceListItem.forEach((item, i) => {
+servicePriceItem.forEach((item, i) => {
     item.style.cursor = 'pointer';
     item.addEventListener('click', () => {
         pricesContentItem.forEach(item => {
@@ -12,8 +19,24 @@ serviceListItem.forEach((item, i) => {
 
         // скрол
         let scrollHeight = document.getElementById('table').offsetTop;
-        
         window.scrollTo({top: scrollHeight, behavior: 'smooth'});
+
+
+        servicePriceInner.classList.remove('service-price__inner--active');
+
+        servicePriceItem.forEach(key => {
+            key.classList.remove('service-price__item--active')
+        })
+        servicePriceItem[i].classList.add('service-price__item--active')
     })
 })
 
+
+servicePriceButton.addEventListener('click', () => {
+    servicePriceInner.classList.add('service-price__inner--active')
+})
+
+servicePriceClose.addEventListener('click', () => {
+    servicePriceInner.classList.remove('service-price__inner--active')
+
+})

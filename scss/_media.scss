@@ -85,13 +85,13 @@
             }
         }
     }
-    .footer__nav-link{
+
+    .footer__nav-link {
         margin-right: 25px;
     }
 
-    .service-list{
-        &__content{
-        }
+    .service-list {
+        &__content {}
     }
 
 
@@ -158,10 +158,11 @@
     }
 
     .service {
-        &__content{
+        &__content {
             justify-content: space-between;
             margin: 0;
         }
+
         &__item {
             width: 100%;
             padding: 34px 30px 20px;
@@ -267,33 +268,40 @@
             margin-top: 20px;
         }
     }
-    .specialists{
+
+    .specialists {
         padding: 50px 0;
     }
-    .specialists-tabs{
-        &__item{
-            display: flex;  
+
+    .specialists-tabs {
+        &__item {
+            display: flex;
             flex-wrap: wrap;
             flex-direction: column-reverse;
         }
-        &__column{
+
+        &__column {
             width: 100%;
             margin-bottom: 20px;
         }
+
         &__info-wrapper {
             align-items: flex-start;
             padding-top: 0px;
             flex-direction: column;
         }
-        &__image{
+
+        &__image {
             margin: 20px 0 0;
-            
+
         }
-        &__description{
+
+        &__description {
             padding: 29px 0;
         }
 
     }
+
     .footer__nav {
         display: flex;
         flex-direction: column;
@@ -303,18 +311,19 @@
         margin: 0 0 15px;
     }
 
-    .contacts{
-        &__content{
+    .contacts {
+        &__content {
             flex-direction: column;
             align-items: flex-start;
         }
 
-        &__item{
+        &__item {
             margin-bottom: 30px;
             display: flex;
             justify-content: space-between;
         }
-        &__img{
+
+        &__img {
             width: 65px;
             margin-right: 30px;
         }
@@ -357,12 +366,12 @@
         height: 330px;
     }
 
-    .service-list{
-        &__item{
+    .service-list {
+        &__item {
             margin: 20px 0;
         }
 
-        &__content{
+        &__content {
             justify-content: space-between;
             margin: 0;
         }
@@ -403,8 +412,8 @@
         padding: 0 20px;
     }
 
-    .header__logo-link{
-        img{
+    .header__logo-link {
+        img {
             width: 135px;
         }
     }
@@ -518,7 +527,7 @@
         margin-bottom: 20px;
         align-items: center;
 
-        li{
+        li {
             text-align: center;
             margin-right: 0;
         }
@@ -540,14 +549,14 @@
         width: 15px;
     }
 
-    .prices{
+    .prices {
         padding: 30px 0 40px;
 
 
-        &__content-item{
-            table{
-                tr{
-                    td{
+        &__content-item {
+            table {
+                tr {
+                    td {
                         padding: 10px 10px;
                         font-size: 12px;
                         width: 80%;
@@ -555,59 +564,125 @@
                 }
             }
         }
-      
+
     }
 
-    .contacts{
-        &__img{
+    .contacts {
+        &__img {
             width: 40px;
-            &-phone{
+
+            &-phone {
                 height: 35px;
                 width: 35px;
             }
 
-            &-map{
+            &-map {
                 width: 25px;
                 height: 35px;
             }
-            &-mail{
+
+            &-mail {
                 height: 35px;
                 width: 41px;
             }
-            
+
         }
-        &__caption{
+
+        &__caption {
             margin: 0 0 5px;
             font-size: 16px;
         }
     }
-    .service-list{
+
+    .service-list {
         padding: 50px 0;
-        &__image{
+
+        &__image {
             width: 70px;
             height: 70px;
 
-            img{
+            img {
                 width: 50%;
                 object-fit: contain;
             }
         }
 
-        &__category{
+        &__category {
             font-size: 18px;
         }
 
-        &__item{
+        &__item {
             flex-basis: 100%;
         }
     }
 
-    .title{
+    .title {
         margin: 0 0 35px;
     }
 
+    .service-price {
 
-    
+        &__button {
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        &__inner {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            margin: 0;
+            width: 100%;
+            left: -200%;
+            background: #fff;
+            transition: .3s;
+            z-index: 200;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+            overflow-y: auto;
+            padding: 60px 0;
+            align-items: center;
+
+            &--active {
+                left: 0;
+            }
+        }
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            min-width: 200px;
+            max-width: 80%;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+            background-color: #f8f8f8;
+            margin-bottom: 10px;
+            transition: .3s;
+            margin: 8px 0px;
+            &--active {
+                background-image: linear-gradient(to right, #0085c7 0%, #00b4c2 100%);
+                color: #fff;
+            }
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__category {
+            font-size: 16px;
+            line-height: 18px;
+            margin-left: 10px;
+            color: inherit;
+        }
+
+        &__close {
+            display: block;
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -753,15 +828,18 @@
         width: 100%;
     }
 
-    .title{
+    .title {
         font-size: 20px;
     }
-    .specialists{
+
+    .specialists {
         padding: 30px 0;
-        &__choice{
+
+        &__choice {
             display: flex;
         }
-        &__top{
+
+        &__top {
             position: fixed;
             background: #fff;
             top: 0;
@@ -777,18 +855,19 @@
             transition: .3s;
             margin: 0;
 
-            &--active{
+            &--active {
                 left: 0;
             }
         }
-        &__close{
+
+        &__close {
             display: block;
-            
+
         }
     }
 
-    .service-list{
-        &__item{
+    .service-list {
+        &__item {
             flex-basis: 100%;
         }
     }
@@ -863,15 +942,17 @@
         line-height: 18px;
         text-align: left;
     }
-    .specialists-tabs__name{
+
+    .specialists-tabs__name {
         font-size: 16px;
     }
-    .specialists-tabs__image{
+
+    .specialists-tabs__image {
         width: 100%;
         height: auto;
     }
 
-    .address__text{
+    .address__text {
         width: 90%;
         font-size: 12px;
         padding: 10px 0;
@@ -880,14 +961,34 @@
         align-items: center;
     }
 
-    .contacts__text{
+    .contacts__text {
         font-size: 12px;
     }
-    .contacts__img{
+
+    .contacts__img {
         margin-right: 15px;
     }
+
     .contacts {
         padding: 25px 0;
+    }
+
+    .prices {
+
+        &__content-item {
+            table {
+                tr {
+                    td {
+                        padding: 10px 10px;
+                        line-height: 1.3;
+                        font-size: 12px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+
     }
 }
 
@@ -913,43 +1014,26 @@
     .statistics__item {
         margin: 15px 0;
     }
+
     .title {
         font-size: 16px;
     }
-    .specialists-tabs__image{
+
+    .specialists-tabs__image {
         width: 100%;
         height: auto;
     }
 
-    .prices{
 
-        &__content-item{
-            table{
-                tr{
-                    td{
-                        padding: 10px 10px;
-                        line-height: 1.3;
-                        font-size: 12px;
-                        width: 80%;
-                    }
-                }
-            }
-        }
 
-        &__column{
-            
-           
-        }
-    }
+    .service-list {
 
-    .service-list{
-        
 
-        &__category{
+        &__category {
             font-size: 16px;
         }
 
-        
+
     }
 }
 
