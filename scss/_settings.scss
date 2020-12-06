@@ -129,4 +129,13 @@ body {
         background: transparent;
         color: #ffffff;
     }
+
+    .blog__link:hover{
+        &:after{
+           opacity: 1;
+        }
+        background: transparent;
+        color: #ffffff;
+        border: 2px solid #fff;
+    }
 }

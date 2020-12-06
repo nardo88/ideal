@@ -683,6 +683,20 @@
         }
     }
 
+    .blog-head{
+        &__title{
+            font-size: 30px;
+            max-width: 380px;
+        }
+        &__bg{
+            opacity: .4;
+        }
+        &__description{
+            font-size: 18px;
+            color: #000;
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -872,6 +886,16 @@
         }
     }
 
+    .blog-head{
+        &__title{
+            font-size: 24px;
+            max-width: 380px;
+        }
+       
+        &__description{
+            font-size: 14px;
+        }
+    }
 
 }
 
