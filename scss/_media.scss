@@ -94,6 +94,17 @@
         &__content {}
     }
 
+    .blog{
+        &__img{
+            flex-basis: 350px;
+            height: 325px;
+        }
+        &__description{
+            font-size: 14px;
+            margin: 25px 0;
+        }
+    }
+
 
 
 
@@ -328,6 +339,25 @@
             margin-right: 30px;
         }
 
+    }
+
+    .blog{
+        &__img{
+            flex-basis: 35%;
+            height: 305px;
+            margin-right: 30px;
+        }
+        &__description{
+            font-size: 14px;
+            margin: 25px 0;
+        }
+        &__link{
+            padding: 6px 25px;
+            font-size: 12px;
+        }
+        &__info{
+            padding-right: 50px;
+        }
     }
 
 }
@@ -697,6 +727,27 @@
         }
     }
 
+    .blog{
+        flex-direction: column;
+        &__img{
+
+            flex-basis: 100%;
+            height: 260px;
+            margin-right: 0px;
+        }
+        &__description{
+            max-width: 100%;
+            margin: 15px 0 20px;
+        }
+        &__info{
+            padding-right: 0px;
+        }
+        &__title{
+            margin-top: 25px;
+            font-size: 18px;
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -1011,8 +1062,24 @@
                 }
             }
         }
+    }
 
-
+    .blog{
+        &__img{
+            height: 200px;
+            margin-right: 0px;
+        }
+        &__description{
+            font-size: 12px;
+            line-height: 1.2;
+        }
+        &__info{
+            padding-right: 0px;
+        }
+        &__title{
+            margin-top: 25px;
+            font-size: 18px;
+        }
     }
 }
 
