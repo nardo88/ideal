@@ -1,0 +1,30 @@
+.blog-page {
+
+    // .blog-page__wrapper
+
+    &__wrapper {
+    }
+
+    // .blog-page__title
+
+    &__title {
+        margin-top: 50px;
+    }
+
+    // .blog-page__content
+
+    &__content {
+        margin: 55px 0;
+        p{
+            font-size: 16px;
+            color: #757575;
+        }
+
+        img{
+            display: block;
+            float: left;
+            margin: 20px 20px 20px 0;
+        }
+    }
+}
+

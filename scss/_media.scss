@@ -53,7 +53,6 @@
         }
 
         &__input {
-            width: 30%;
             padding: 0 20px;
         }
     }
@@ -99,10 +98,13 @@
             flex-basis: 350px;
             height: 325px;
         }
-        &__description{
-            font-size: 14px;
-            margin: 25px 0;
+        &__info{
+            p{
+                font-size: 14px;
+                margin: 25px 0;
+            }
         }
+      
     }
 
 
@@ -196,7 +198,6 @@
         }
 
         &__input {
-            width: 30%;
             padding: 0 20px;
 
         }
@@ -347,17 +348,52 @@
             height: 305px;
             margin-right: 30px;
         }
-        &__description{
-            font-size: 14px;
-            margin: 25px 0;
-        }
+        
         &__link{
             padding: 6px 25px;
             font-size: 12px;
         }
         &__info{
             padding-right: 50px;
+
+            p{
+                font-size: 14px;
+                margin: 25px 0;
+            }
         }
+    }
+
+    .about {
+        &__title {
+            font-size: 30px;
+            max-width: 480px;
+        }
+
+        &__btn {
+            width: 40px;
+            height: 40px;
+            background-size: 11px 23px;
+        }
+
+        &__description {
+            color: #000;
+        }
+
+      
+
+        &__content {
+            padding: 78px 0 80px;
+        }
+
+        
+
+        &__bg {
+            opacity: .4;
+
+            img {}
+        }
+
+        
     }
 
 }
@@ -480,11 +516,7 @@
             color: #000;
         }
 
-        &__bg {
-            opacity: .4;
-
-            img {}
-        }
+      
 
         &__content {
             padding: 78px 0 80px;
@@ -735,16 +767,31 @@
             height: 260px;
             margin-right: 0px;
         }
-        &__description{
-            max-width: 100%;
-            margin: 15px 0 20px;
-        }
+        
         &__info{
             padding-right: 0px;
+
+            p{
+                max-width: 100%;
+                margin: 15px 0 20px;
+            }
         }
         &__title{
             margin-top: 25px;
             font-size: 18px;
+        }
+    }
+
+    .blog-page__content{
+        figure{
+            width: 100%;
+            margin: 20px 0;
+            float: none;
+            img{
+                width: 100%;
+                object-fit: contain;
+                margin: 0;
+            }
         }
     }
 
@@ -1069,12 +1116,12 @@
             height: 200px;
             margin-right: 0px;
         }
-        &__description{
-            font-size: 12px;
-            line-height: 1.2;
-        }
+        
         &__info{
             padding-right: 0px;
+            p{}
+            font-size: 12px;
+            line-height: 1.2;
         }
         &__title{
             margin-top: 25px;
